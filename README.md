@@ -25,3 +25,20 @@ Daten sammeln und anzeigen:
 Browser schließen:
 
     Nach Beendigung des Tests den Browser schließen.
+
+
+Anforderungen:
+
+    psutil installieren:
+
+    bash
+
+pip install psutil
+
+selenium und den passenden WebDriver installieren:
+
+bash
+
+pip install selenium
+
+Lade den ChromeDriver herunter und stelle sicher, dass er im PATH ist.
