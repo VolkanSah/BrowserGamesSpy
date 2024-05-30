@@ -97,7 +97,9 @@ This tool aims to empower users by ensuring transparency and accountability from
 
 ## License
 This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details.
-### Source
-[BrowserGames-Spy](https://github.com/VolkanSah/BrowserGamesSpy)
 
-[GPT to assist your rights](https://chatgpt.com/g/g-0BiFNYNhW-dso-support-assistant)
+### Source
+- [BrowserGames-Spy](https://github.com/VolkanSah/BrowserGamesSpy)
+
+## GPTs for your rights!
+- [DSO Support assistant](https://chatgpt.com/g/g-0BiFNYNhW-dso-support-assistant) <-- Nice shit bro & sis, nice shit!
