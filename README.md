@@ -2,7 +2,7 @@
 ###### System and Network Monitoring Tool
 ![Broswer Games Spy](browser-games-spy.jpg)
 
-This tool monitors system metrics and network connections for browser-based games like "Die Siedler Online" (the settlers online). It collects data on CPU usage, memory usage, network activity, and active network connections, and displays these metrics in a graphical user interface (GUI) using `tkinter`. Additionally, the tool can save the collected data to a CSV file and visualize the metrics using `matplotlib`.
+This tool monitors system metrics and network connections for browser-based games like "Die Siedler Online" (The Settlers Online). It collects data on CPU usage, memory usage, network activity, and active network connections, and displays these metrics in a graphical user interface (GUI) using `tkinter`. Additionally, the tool can save the collected data to a CSV file and visualize the metrics using `matplotlib`.
 
 ## Why This Tool?
 Online game operators often claim their systems are secure and harmless to your system. However, many forensic experts and security admins can prove otherwise. Frequent blue screens or system freezes, leading to improper shutdowns, can cause the following damages to your system:
@@ -86,20 +86,25 @@ The code consists of the following main parts:
     - Start the Chrome browser using `selenium`.
     - Begin the monitoring and updating loop.
 
-
-
 ---
 
 This tool aims to empower users by ensuring transparency and accountability from online game operators, particularly in light of the GDPR. Use this tool to monitor your system, understand the impact of online games, and safeguard your rights.
+---
+A special thanks to individuals like BB_Kumakun from the Community Management team at "The Settlers Online." In my opinion, projects like this arise because of people who, in my view, lack insight and understanding of technology and their own language. Constructive criticism is valuable, even if it's uncomfortable. Just a tip: selective treatment can be seen as discriminatory.
 
-### Note 4 Online game operators:
-**In your face bitches! In your face!**
+>![Warning]
+> Remember, don't play games with me, because you might not like how I respond.
+
+I have created a GPT for you that you can use for free as a ChatGPT Plus user. Soon, OpenAI will also allow access to custom GPTs for free users.
+
+What does this GPT do? It helps you assert your rights and assists you in formulating your complaints to consumer protection agencies or similar organizations, providing detailed explanations with technical and legal knowledge.
+
+
+## GPTs for your rights!
+- [DSO Support assistant](https://chatgpt.com/g/g-0BiFNYNhW-dso-support-assistant) <-- Nice shit bro & sis, nice shit!
 
 ## License
 This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details.
 
 ### Source
 - [BrowserGames-Spy](https://github.com/VolkanSah/BrowserGamesSpy)
-
-## GPTs for your rights!
-- [DSO Support assistant](https://chatgpt.com/g/g-0BiFNYNhW-dso-support-assistant) <-- Nice shit bro & sis, nice shit!
