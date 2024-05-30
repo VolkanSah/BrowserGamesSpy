@@ -1,4 +1,4 @@
-# BrowserGamesSpy 
+# BrowserGamesSpy + GPT
 ###### System and Network Monitoring Tool
 ![Broswer Games Spy](browser-games-spy.jpg)
 
