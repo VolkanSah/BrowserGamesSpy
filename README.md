@@ -93,4 +93,5 @@ This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) fi
 
 This tool aims to empower users by ensuring transparency and accountability from online game operators, particularly in light of the GDPR. Use this tool to monitor your system, understand the impact of online games, and safeguard your rights.
 
-### In your Face bitches! In your Face!
+### Online game operators
+**In your Face bitches! In your Face!**
