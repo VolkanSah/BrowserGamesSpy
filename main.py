@@ -4,6 +4,8 @@ import time
 import tkinter as tk
 from tkinter import ttk
 import csv
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 def get_system_metrics():
     cpu_usage = psutil.cpu_percent(interval=1)
@@ -39,6 +41,8 @@ def update_metrics():
     
     data.append([cpu_usage, memory_usage, sent_bytes, recv_bytes, active_connections])
     
+    plot_data()
+    
     root.after(5000, update_metrics)
 
 def save_data():
@@ -48,8 +52,45 @@ def save_data():
         for row in data:
             writer.writerow(row[:4] + [str(row[4])])
 
+def plot_data():
+    if len(data) > 1:
+        cpu_data = [row[0] for row in data]
+        memory_data = [row[1] for row in data]
+        sent_data = [row[2] for row in data]
+        recv_data = [row[3] for row in data]
+
+        time_points = list(range(len(data)))
+
+        fig.clear()
+
+        ax1 = fig.add_subplot(221)
+        ax1.plot(time_points, cpu_data, label='CPU Usage')
+        ax1.set_title('CPU Usage (%)')
+        ax1.set_xlabel('Time')
+        ax1.set_ylabel('Usage (%)')
+
+        ax2 = fig.add_subplot(222)
+        ax2.plot(time_points, memory_data, label='Memory Usage')
+        ax2.set_title('Memory Usage (%)')
+        ax2.set_xlabel('Time')
+        ax2.set_ylabel('Usage (%)')
+
+        ax3 = fig.add_subplot(223)
+        ax3.plot(time_points, sent_data, label='Network Sent')
+        ax3.set_title('Network Sent (bytes)')
+        ax3.set_xlabel('Time')
+        ax3.set_ylabel('Bytes')
+
+        ax4 = fig.add_subplot(224)
+        ax4.plot(time_points, recv_data, label='Network Received')
+        ax4.set_title('Network Received (bytes)')
+        ax4.set_xlabel('Time')
+        ax4.set_ylabel('Bytes')
+
+        canvas.draw()
+
 def main():
-    global root, cpu_label, memory_label, sent_label, recv_label, connections_text, data
+    global root, cpu_label, memory_label, sent_label, recv_label, connections_text, data, fig, canvas
     
     url = "https://www.diesiedleronline.de/"
     
@@ -80,6 +121,10 @@ def main():
     
     save_button = ttk.Button(root, text="Save Data", command=save_data)
     save_button.pack()
+    
+    fig = plt.Figure(figsize=(10, 8), dpi=100)
+    canvas = FigureCanvasTkAgg(fig, master=root)
+    canvas.get_tk_widget().pack()
 
     # Update the metrics every 5 seconds
     root.after(5000, update_metrics)
