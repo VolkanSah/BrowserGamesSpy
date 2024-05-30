@@ -92,7 +92,7 @@ This tool aims to empower users by ensuring transparency and accountability from
 ---
 A special thanks to individuals like BB_Kumakun from the Community Management team at "The Settlers Online." In my opinion, projects like this arise because of people who, in my view, lack insight and understanding of technology and their own language. Constructive criticism is valuable, even if it's uncomfortable. Just a tip: selective treatment can be seen as discriminatory.
 
->![Warning]
+>[Warning]
 > Remember, don't play games with me, because you might not like how I respond.
 
 I have created a GPT for you that you can use for free as a ChatGPT Plus user. Soon, OpenAI will also allow access to custom GPTs for free users.
