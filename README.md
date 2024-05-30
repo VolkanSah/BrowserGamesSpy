@@ -2,6 +2,20 @@
 ###### System and Network Monitoring Tool
 ![Broswer Games Spy](browser-games-spy.jpg)
 
+## Table of Contents
+- [Introduction](#introduction)
+- [Why This Tool?](#why-this-tool)
+- [User Rights and GDPR](#user-rights-and-gdpr)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Code Explanation](#code-explanation)
+- [GPTs for Your Rights!](#gpts-for-your-rights)
+- [License](#license)
+- [Source](#source)
+
+
 This tool monitors system metrics and network connections for browser-based games like "Die Siedler Online" (The Settlers Online). It collects data on CPU usage, memory usage, network activity, and active network connections, and displays these metrics in a graphical user interface (GUI) using `tkinter`. Additionally, the tool can save the collected data to a CSV file and visualize the metrics using `matplotlib`.
 
 ## Why This Tool?
@@ -94,6 +108,9 @@ A special thanks to individuals like BB_Kumakun from the Community Management te
 
 > [!WARNING]
 > Remember, don't play games with me, because you might not like how I respond. In your faces bitches!
+
+
+## GPTs for Your Rights!
 
 **I have created a GPT for you all that you can use for free as a ChatGPT Plus user. Soon, OpenAI will also allow access to custom GPTs for free users.**
 
