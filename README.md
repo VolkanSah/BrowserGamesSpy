@@ -48,7 +48,7 @@ This tool helps you exercise these rights by providing transparency about the da
     pip install psutil selenium matplotlib
     ```
 
-2. Download and install [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/) and ensure it is in your PATH.
+2. Download and install "ChromeDriver" and ensure it is in your PATH.
 
 ## Usage
 1. Clone the repository or download the script.
@@ -57,7 +57,7 @@ This tool helps you exercise these rights by providing transparency about the da
     python monitor.py
     ```
 
-3. The GUI will open and start monitoring the specified URL (https://www.diesiedleronline.de/).
+3. The GUI will open and start monitoring the specified URL (https://www.diesiedleronline.de/), You can use this tool for every browsergame, please change URL for your needs.
 
 4. Use the checkboxes to select which metrics to display in the plots.
 
