@@ -16,8 +16,6 @@
 - [Lizenz](#lizenz)
 - [Quelle](#quelle)
 
-- [english Version](README.md)
-
 ## Einführung
 Dieses Tool überwacht Systemmetriken und Netzwerkverbindungen für browserbasierte Spiele wie "Die Siedler Online". Es sammelt Daten zur CPU-Auslastung, Speichernutzung, Netzwerkaktivität und aktiven Netzwerkverbindungen und zeigt diese Metriken in einer grafischen Benutzeroberfläche (GUI) mit `tkinter` an. Darüber hinaus kann das Tool die gesammelten Daten in einer CSV-Datei speichern und die Metriken mit `matplotlib` visualisieren.
 
