@@ -1,5 +1,5 @@
-
-# System and Network Monitoring Tool
+# BrowserGamesSpy 
+###### System and Network Monitoring Tool
 
 This tool monitors system metrics and network connections for browser-based games like "Die Siedler Online". It collects data on CPU usage, memory usage, network activity, and active network connections, and displays these metrics in a graphical user interface (GUI) using `tkinter`. Additionally, the tool can save the collected data to a CSV file and visualize the metrics using `matplotlib`.
 
