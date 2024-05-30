@@ -95,7 +95,7 @@ A special thanks to individuals like BB_Kumakun from the Community Management te
 > [!WARNING]
 > Remember, don't play games with me, because you might not like how I respond. In your faces bitches!
 
-I have created a GPT for you all that you can use for free as a ChatGPT Plus user. Soon, OpenAI will also allow access to custom GPTs for free users.
+**I have created a GPT for you all that you can use for free as a ChatGPT Plus user. Soon, OpenAI will also allow access to custom GPTs for free users.**
 
 What does this GPT do? It helps you assert your rights and assists you in formulating your complaints to consumer protection agencies or similar organizations, providing detailed explanations with technical and legal knowledge.
 
