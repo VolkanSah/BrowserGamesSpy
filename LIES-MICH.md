@@ -3,6 +3,7 @@
 ![Broswer Games Spy](browser-games-spy.jpg)
 
 ## Inhaltsverzeichnis
+
 - [Einführung](#einführung)
 - [Warum Dieses Tool?](#warum-dieses-tool)
 - [Benutzerrechte und DSGVO](#benutzerrechte-und-dsgvo)
