@@ -105,10 +105,10 @@ Der Code besteht aus den folgenden Hauptteilen:
 
 Dieses Tool zielt darauf ab, Benutzer zu stärken, indem es Transparenz und Rechenschaftspflicht von Online-Spielbetreibern gewährleistet, insbesondere im Hinblick auf die DSGVO. Verwenden Sie dieses Tool, um Ihr System zu überwachen, die Auswirkungen von Online-Spielen zu verstehen und Ihre Rechte zu schützen.
 
-Ein besonderer Dank geht an Personen wie BB_Kumakun aus dem Community-Management-Team von "Die Siedler Online". Meiner Meinung nach entstehen Projekte wie dieses durch Menschen, die, meiner Ansicht nach, Einblick und Verständnis für Technologie und ihre eigene Sprache fehlen. Konstruktive Kritik ist wertvoll, auch wenn sie unangenehm ist. Ein Tipp: selektive Behandlung kann als diskriminierend angesehen werden.
+Ein besonderer Dank geht an Personen wie BB_Kumakun aus dem Community-Management-Team von "Die Siedler Online". Meiner Meinung nach entstehen Projekte wie dieses durch Menschen, die, meiner Ansicht nach, die Einsichtfähigkeit sowie das Verständnis für Technologie und ihre eigene Sprache fehlen. Konstruktive Kritik ist wertvoll, auch wenn sie unangenehm ist. Ein Tipp: selektive Behandlung kann als Rassismus angesehen werden.
 
 > [!WARNUNG]
-> Denken Sie daran, spielen Sie keine Spielchen mit mir, denn Sie könnten nicht mögen, wie ich zurückspiele.
+> Denken Sie daran, spielen Sie keine Spielchen mit mir, denn Sie werden es hassen wie ich antworte!
 
 ## GPTs für Ihre Rechte!
 
