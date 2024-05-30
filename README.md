@@ -1,6 +1,6 @@
-
 # BrowserGamesSpy 
 ###### System and Network Monitoring Tool
+![Broswer Games Spy](browser-games-spy.jpg)
 
 This tool monitors system metrics and network connections for browser-based games like "Die Siedler Online". It collects data on CPU usage, memory usage, network activity, and active network connections, and displays these metrics in a graphical user interface (GUI) using `tkinter`. Additionally, the tool can save the collected data to a CSV file and visualize the metrics using `matplotlib`.
 
@@ -86,12 +86,16 @@ The code consists of the following main parts:
     - Start the Chrome browser using `selenium`.
     - Begin the monitoring and updating loop.
 
-## License
-This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details.
+
 
 ---
 
 This tool aims to empower users by ensuring transparency and accountability from online game operators, particularly in light of the GDPR. Use this tool to monitor your system, understand the impact of online games, and safeguard your rights.
 
-### 4 Online game operators:
-**In your Face bitches! In your Face!**
+### Note 4 Online game operators:
+**In your face bitches! In your face!**
+
+## License
+This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details.
+### Source
+[BrowserGames-Spy](https://github.com/VolkanSah/BrowserGamesSpy)
