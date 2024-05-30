@@ -63,34 +63,39 @@ def plot_data():
 
         fig.clear()
 
-        ax1 = fig.add_subplot(221)
-        ax1.plot(time_points, cpu_data, label='CPU Usage')
-        ax1.set_title('CPU Usage (%)')
-        ax1.set_xlabel('Time')
-        ax1.set_ylabel('Usage (%)')
+        if show_cpu.get():
+            ax1 = fig.add_subplot(221)
+            ax1.plot(time_points, cpu_data, label='CPU Usage')
+            ax1.set_title('CPU Usage (%)')
+            ax1.set_xlabel('Time')
+            ax1.set_ylabel('Usage (%)')
 
-        ax2 = fig.add_subplot(222)
-        ax2.plot(time_points, memory_data, label='Memory Usage')
-        ax2.set_title('Memory Usage (%)')
-        ax2.set_xlabel('Time')
-        ax2.set_ylabel('Usage (%)')
+        if show_memory.get():
+            ax2 = fig.add_subplot(222)
+            ax2.plot(time_points, memory_data, label='Memory Usage')
+            ax2.set_title('Memory Usage (%)')
+            ax2.set_xlabel('Time')
+            ax2.set_ylabel('Usage (%)')
 
-        ax3 = fig.add_subplot(223)
-        ax3.plot(time_points, sent_data, label='Network Sent')
-        ax3.set_title('Network Sent (bytes)')
-        ax3.set_xlabel('Time')
-        ax3.set_ylabel('Bytes')
+        if show_sent.get():
+            ax3 = fig.add_subplot(223)
+            ax3.plot(time_points, sent_data, label='Network Sent')
+            ax3.set_title('Network Sent (bytes)')
+            ax3.set_xlabel('Time')
+            ax3.set_ylabel('Bytes')
 
-        ax4 = fig.add_subplot(224)
-        ax4.plot(time_points, recv_data, label='Network Received')
-        ax4.set_title('Network Received (bytes)')
-        ax4.set_xlabel('Time')
-        ax4.set_ylabel('Bytes')
+        if show_recv.get():
+            ax4 = fig.add_subplot(224)
+            ax4.plot(time_points, recv_data, label='Network Received')
+            ax4.set_title('Network Received (bytes)')
+            ax4.set_xlabel('Time')
+            ax4.set_ylabel('Bytes')
 
         canvas.draw()
 
 def main():
     global root, cpu_label, memory_label, sent_label, recv_label, connections_text, data, fig, canvas
+    global show_cpu, show_memory, show_sent, show_recv
     
     url = "https://www.diesiedleronline.de/"
     
@@ -121,7 +126,18 @@ def main():
     
     save_button = ttk.Button(root, text="Save Data", command=save_data)
     save_button.pack()
-    
+
+    # Checkbox options for metrics
+    show_cpu = tk.BooleanVar(value=True)
+    show_memory = tk.BooleanVar(value=True)
+    show_sent = tk.BooleanVar(value=True)
+    show_recv = tk.BooleanVar(value=True)
+
+    ttk.Checkbutton(root, text="Show CPU Usage", variable=show_cpu, command=plot_data).pack()
+    ttk.Checkbutton(root, text="Show Memory Usage", variable=show_memory, command=plot_data).pack()
+    ttk.Checkbutton(root, text="Show Network Sent", variable=show_sent, command=plot_data).pack()
+    ttk.Checkbutton(root, text="Show Network Received", variable=show_recv, command=plot_data).pack()
+
     fig = plt.Figure(figsize=(10, 8), dpi=100)
     canvas = FigureCanvasTkAgg(fig, master=root)
     canvas.get_tk_widget().pack()
