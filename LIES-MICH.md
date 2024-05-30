@@ -1,5 +1,5 @@
 # BrowserGamesSpy + GPT
-###### System- und Netzwerküberwachungstool
+###### System- und Netzwerküberwachungstool | [> Readin english](README.md)
 ![Broswer Games Spy](browser-games-spy.jpg)
 
 ## Inhaltsverzeichnis
