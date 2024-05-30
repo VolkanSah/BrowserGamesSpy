@@ -1,5 +1,5 @@
 # BrowserGamesSpy + GPT
-###### System and Network Monitoring Tool [auf deutsch lesen](LIES-MICH.md)
+###### System and Network Monitoring Tool | [> Auf deutsch lesen](LIES-MICH.md)
 ![Broswer Games Spy](browser-games-spy.jpg)
 
 ## Table of Contents
