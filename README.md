@@ -1,4 +1,4 @@
-# BrowserGamesSpy + GPT
+# BrowserGamesSpy (Alpha) + GPT (Beta)
 ###### System and Network Monitoring Tool | [> Auf deutsch lesen](LIES-MICH.md)
 ![Broswer Games Spy](browser-games-spy.jpg)
 
