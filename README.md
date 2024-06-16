@@ -104,10 +104,6 @@ The code consists of the following main parts:
 
 This tool aims to empower users by ensuring transparency and accountability from online game operators, particularly in light of the GDPR. Use this tool to monitor your system, understand the impact of online games, and safeguard your rights.
 
-A special thanks to individuals like BB_Kumakun from the Community Management team at "The Settlers Online." In my opinion, projects like this arise because of people who, in my view, lack insight and understanding of technology and their own language. Constructive criticism is valuable, even if it's uncomfortable. Just a tip: selective treatment can be seen as discriminatory.
-
-> [!WARNING]
-> Remember, don't play games with me, because you might not like how I respond.
 
 
 ## GPTs for Your Rights!
