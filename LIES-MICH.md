@@ -105,11 +105,6 @@ Der Code besteht aus den folgenden Hauptteilen:
 
 Dieses Tool zielt darauf ab, Benutzer zu stärken, indem es Transparenz und Rechenschaftspflicht von Online-Spielbetreibern gewährleistet, insbesondere im Hinblick auf die DSGVO. Verwenden Sie dieses Tool, um Ihr System zu überwachen, die Auswirkungen von Online-Spielen zu verstehen und Ihre Rechte zu schützen.
 
-Ein besonderer Dank geht an Personen wie BB_Kumakun aus dem Community-Management-Team von "Die Siedler Online". Meiner Meinung nach entstehen Projekte wie dieses durch Menschen, die, meiner Ansicht nach, die Einsichtfähigkeit sowie das Verständnis für Technologie und ihre eigene Sprache fehlen. Konstruktive Kritik ist wertvoll, auch wenn sie unangenehm ist. Ein Tipp: selektive Behandlung kann als Rassismus angesehen werden.
-
-> [!WARNUNG]
-> Denken Sie daran, spielen Sie keine Spielchen mit mir, denn Sie werden es hassen wie ich antworte!
-
 ## GPTs für Ihre Rechte!
 
 **Ich habe für Sie alle eine GPT erstellt, die Sie als ChatGPT Plus-Benutzer kostenlos nutzen können. Bald wird OpenAI auch den Zugriff auf benutzerdefinierte GPTs für kostenlose Benutzer ermöglichen.**
