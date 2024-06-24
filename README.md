@@ -12,7 +12,6 @@
 - [Usage](#usage)
 - [Screenshot](#screenshot)
 - [Code Explanation](#code-explanation)
-- [GPTs for Your Rights!](#gpts-for-your-rights)
 - [License](#license)
 - [Source](#source)
 
@@ -108,14 +107,6 @@ The code consists of the following main parts:
 
 This tool aims to empower users by ensuring transparency and accountability from online game operators, particularly in light of the GDPR. Use this tool to monitor your system, understand the impact of online games, and safeguard your rights.
 
-
-
-## GPTs for Your Rights!
-
-**I have created a GPT for you all that you can use for free as a ChatGPT Plus user. Soon, OpenAI will also allow access to custom GPTs for free users.**
-
-What does this GPT do? It helps you assert your rights and assists you in formulating your complaints to consumer protection agencies or similar organizations, providing detailed explanations with technical and legal knowledge.
-- [> DSO Support assistant](https://chatgpt.com/g/g-0BiFNYNhW-dso-support-assistant) 
 
 ## License
 This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details.
