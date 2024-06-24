@@ -1,6 +1,6 @@
-# BrowserGamesSpy (Alpha) + GPT (Beta)
+# BrowserGamesSpy 
 ###### System- und Netzwerküberwachungstool | [> Read in english](README.md)
-![Broswer Games Spy](browser-games-spy.jpg)
+![Broswer Games Spy](gamespy.png)
 
 ## Inhaltsverzeichnis
 
@@ -12,7 +12,6 @@
 - [Installation](#installation)
 - [Verwendung](#verwendung)
 - [Code-Erklärung](#code-erklärung)
-- [GPTs für Ihre Rechte!](#gpts-für-ihre-rechte)
 - [Lizenz](#lizenz)
 - [Quelle](#quelle)
 
@@ -105,12 +104,6 @@ Der Code besteht aus den folgenden Hauptteilen:
 
 Dieses Tool zielt darauf ab, Benutzer zu stärken, indem es Transparenz und Rechenschaftspflicht von Online-Spielbetreibern gewährleistet, insbesondere im Hinblick auf die DSGVO. Verwenden Sie dieses Tool, um Ihr System zu überwachen, die Auswirkungen von Online-Spielen zu verstehen und Ihre Rechte zu schützen.
 
-## GPTs für Ihre Rechte!
-
-**Ich habe für Sie alle eine GPT erstellt, die Sie als ChatGPT Plus-Benutzer kostenlos nutzen können. Bald wird OpenAI auch den Zugriff auf benutzerdefinierte GPTs für kostenlose Benutzer ermöglichen.**
-
-Was macht dieses GPT? Es hilft Ihnen, Ihre Rechte zu wahren und unterstützt Sie bei der Formulierung Ihrer Beschwerden an Verbraucherzentralen oder ähnliche Organisationen, indem es detaillierte Erklärungen mit technischem und juristischem Wissen bietet.
-- [> DSO Support Assistant](https://chatgpt.com/g/g-0BiFNYNhW-dso-support-assistant) 
 
 ## Lizenz
 Dieses Projekt ist unter der GPLv3-Lizenz lizenziert - siehe die [LICENSE](LICENSE) Datei für Details.
