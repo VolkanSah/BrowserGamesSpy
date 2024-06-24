@@ -10,6 +10,7 @@
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Screenshot](#screenshot)
 - [Code Explanation](#code-explanation)
 - [GPTs for Your Rights!](#gpts-for-your-rights)
 - [License](#license)
@@ -76,6 +77,9 @@ This tool helps you exercise these rights by providing transparency about the da
 4. Use the checkboxes to select which metrics to display in the plots.
 
 5. Click the "Save Data" button to save the collected data to a CSV file.
+
+### Screenshot
+![GameSpy](gamespy.png)
 
 ## Code Explanation
 The code consists of the following main parts:
