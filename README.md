@@ -1,6 +1,6 @@
 # BrowserGamesSpy (Alpha) + GPT (Beta)
 ###### System and Network Monitoring Tool | [> Auf deutsch lesen](LIES-MICH.md)
-![Broswer Games Spy](browser-games-spy.jpg)
+![GameSpy](gamespy.png)
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -10,7 +10,6 @@
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Screenshot](#screenshot)
 - [Code Explanation](#code-explanation)
 - [License](#license)
 - [Source](#source)
@@ -77,8 +76,7 @@ This tool helps you exercise these rights by providing transparency about the da
 
 5. Click the "Save Data" button to save the collected data to a CSV file.
 
-### Screenshot
-![GameSpy](gamespy.png)
+
 
 ## Code Explanation
 The code consists of the following main parts:
