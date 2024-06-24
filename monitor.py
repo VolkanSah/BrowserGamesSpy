@@ -144,6 +144,8 @@ def main():
 
     # Update the metrics every 5 seconds
     root.after(5000, update_metrics)
+    # Update the metrics every 1 seconds
+    # root.after(1000, update_metrics) 
     
     # Run the GUI
     root.mainloop()
