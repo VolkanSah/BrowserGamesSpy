@@ -17,7 +17,9 @@
 - [Quellen](#quellen)
 
 ## Einleitung
-Dieses Tool überwacht Systemmetriken und Netzwerkverbindungen für browserbasierte Spiele wie "Die Siedler Online". Es sammelt Daten zu CPU-Auslastung, Speichernutzung, Netzwerkaktivität und aktiven Netzwerkverbindungen und zeigt diese Metriken in einer grafischen Benutzeroberfläche (GUI) mithilfe von `tkinter` an. Zusätzlich kann das Tool die gesammelten Daten in einer CSV-Datei speichern und die Metriken mit `matplotlib` visualisieren.
+
+Dieses Tool überwacht Systemmetriken und Netzwerkverbindungen für browserbasierte Spiele wie "Die Siedler Online", "Forge of Empires", "Grepolis", "Travian: Legends" und "OGame". Es sammelt Daten zu CPU-Auslastung, Speichernutzung, Netzwerkaktivität und aktiven Netzwerkverbindungen und zeigt diese Metriken in einer grafischen Benutzeroberfläche (GUI) mithilfe von `tkinter` an. Zusätzlich kann das Tool die gesammelten Daten in einer CSV-Datei speichern und die Metriken mit `matplotlib` visualisieren.
+
 
 ## Warum dieses Tool?
 Anbieter von Online-Spielen behaupten oft, dass ihre Systeme sicher und unschädlich für Ihr System sind. Viele Forensik-Experten und Sicherheitsadministratoren können jedoch das Gegenteil beweisen. Häufige Bluescreens oder Systemabstürze, die zu unsachgemäßen Shutdowns führen, können folgende Schäden anrichten:
@@ -130,3 +132,9 @@ Dieses Projekt ist unter der GPLv3-Lizenz lizenziert – siehe die Datei [LICENS
 
 ## Quellen
 - [BrowserGames-Spy](https://github.com/VolkanSah/BrowserGamesSpy)
+
+### Sonstiges
+
+README.md erstellt von Git Repo Manager (GPT) auf [GPT-Store](https://chatgpt.com/g/g-HBNMrjPNU-git-repo-manager) von Volkan Sah
+
+
