@@ -18,7 +18,9 @@
 - [Source](#source)
 
 ## Introduction
-This tool monitors system metrics and network connections for browser-based games like "Die Siedler Online" (The Settlers Online). It collects data on CPU usage, memory usage, network activity, and active network connections, and displays these metrics in a graphical user interface (GUI) using `tkinter`. Additionally, the tool can save the collected data to a CSV file and visualize the metrics using `matplotlib`.
+
+This tool monitors system metrics and network connections for browser-based games like "The Settlers Online", "Forge of Empires", "Grepolis", "Travian: Legends", and "OGame". It collects data on CPU usage, memory usage, network activity, and active network connections, and displays these metrics in a graphical user interface (GUI) using `tkinter`. Additionally, the tool can save the collected data to a CSV file and visualize the metrics using `matplotlib`.
+
 
 ## Why This Tool?
 Online game operators often claim their systems are secure and harmless to your system. However, many forensic experts and security admins can prove otherwise. Frequent blue screens or system freezes, leading to improper shutdowns, can cause the following damages to your system:
