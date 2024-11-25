@@ -1,5 +1,7 @@
-# BrowserGamesSpy v2 - dev status
-###### System and Network Monitoring Tool | [> Auf deutsch lesen](LIES-MICH.md)
+
+# BrowserGamesSpy v2 - Development Status  
+###### System and Network Monitoring Tool | [> Auf Deutsch lesen](LIES-MICH.md)
+
 ![GameSpy](gamespy.png)
 
 ## Table of Contents
@@ -7,6 +9,7 @@
 - [Why This Tool?](#why-this-tool)
 - [User Rights and GDPR](#user-rights-and-gdpr)
 - [Features](#features)
+- [New in Version 2](#new-in-version-2)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -26,7 +29,7 @@ Online game operators often claim their systems are secure and harmless to your 
 
 It's not always clear where data is being sent, especially under the European General Data Protection Regulation (GDPR). As a user, I want to know where my data is being streamed. This tool is designed to help you document any concerns and potential damages, providing evidence to consumer protection agencies or similar entities to combat the pursuit of profit over service and security.
 
-### User Rights and GDPR
+## User Rights and GDPR
 Under the GDPR, users have several rights regarding their personal data:
 - **Right to be Informed**: You must be informed about how your data is being used.
 - **Right of Access**: You can access your personal data and understand how it is being processed.
@@ -45,6 +48,30 @@ This tool helps you exercise these rights by providing transparency about the da
 - Allows the user to select which metrics to display using checkboxes.
 - Saves collected data to a CSV file.
 - Visualizes metrics in plots using `matplotlib`.
+
+## New in Version 2
+The most significant changes and new features in version 2 are:
+
+1. **Detailed Logging System**:
+   - Creates log files with timestamps.
+   - Logs all major events and metrics.
+   - Separate logs for each session.
+
+2. **Enhanced Network Monitoring**:
+   - Detects and logs new connections.
+   - Saves connection history.
+   - Optional IP localization (can be extended).
+
+3. **Timestamps for All Events**:
+   - Each metric is saved with precise timestamps.
+   - Improved CSV files with time information.
+   - Timestamps displayed in the GUI.
+
+4. **Improved Error Handling**:
+   - Try-catch blocks for critical operations.
+   - Logs error messages for debugging.
+
+The core functionality remains unchanged. Logs can be found in the `logs` folder, and saved metrics now include timestamps.
 
 ## Requirements
 - Python 3.x
@@ -70,13 +97,11 @@ This tool helps you exercise these rights by providing transparency about the da
     python monitor.py
     ```
 
-3. The GUI will open and start monitoring the specified URL (https://www.diesiedleronline.de/), You can use this tool for every browsergame, please change URL for your needs.
+3. The GUI will open and start monitoring the specified URL (https://www.diesiedleronline.de/). You can use this tool for every browser game, just change the URL to fit your needs.
 
 4. Use the checkboxes to select which metrics to display in the plots.
 
 5. Click the "Save Data" button to save the collected data to a CSV file.
-
-
 
 ## Code Explanation
 The code consists of the following main parts:
@@ -101,13 +126,8 @@ The code consists of the following main parts:
     - Start the Chrome browser using `selenium`.
     - Begin the monitoring and updating loop.
 
----
-
-This tool aims to empower users by ensuring transparency and accountability from online game operators, particularly in light of the GDPR. Use this tool to monitor your system, understand the impact of online games, and safeguard your rights.
-
-
 ## License
 This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details.
 
-### Source
+## Source
 - [BrowserGames-Spy](https://github.com/VolkanSah/BrowserGamesSpy)
