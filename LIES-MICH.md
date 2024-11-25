@@ -1,60 +1,85 @@
-# BrowserGamesSpy 
-###### System- und Netzwerküberwachungstool | [> Read in english](README.md)
-![Broswer Games Spy](gamespy.png)
+# BrowserGamesSpy v2
+###### System- und Netzwerküberwachungstool | [> Read in English](README.md)
+
+![GameSpy](gamespy.png)
 
 ## Inhaltsverzeichnis
-
-- [Einführung](#einführung)
-- [Warum Dieses Tool?](#warum-dieses-tool)
+- [Einleitung](#einleitung)
+- [Warum dieses Tool?](#warum-dieses-tool)
 - [Benutzerrechte und DSGVO](#benutzerrechte-und-dsgvo)
 - [Funktionen](#funktionen)
-- [Anforderungen](#anforderungen)
+- [Neu in Version 2](#neu-in-version-2)
+- [Systemanforderungen](#systemanforderungen)
 - [Installation](#installation)
 - [Verwendung](#verwendung)
-- [Code-Erklärung](#code-erklärung)
+- [Codeerklärung](#codeerklärung)
 - [Lizenz](#lizenz)
-- [Quelle](#quelle)
+- [Quellen](#quellen)
 
-## Einführung
-Dieses Tool überwacht Systemmetriken und Netzwerkverbindungen für browserbasierte Spiele wie "Die Siedler Online". Es sammelt Daten zur CPU-Auslastung, Speichernutzung, Netzwerkaktivität und aktiven Netzwerkverbindungen und zeigt diese Metriken in einer grafischen Benutzeroberfläche (GUI) mit `tkinter` an. Darüber hinaus kann das Tool die gesammelten Daten in einer CSV-Datei speichern und die Metriken mit `matplotlib` visualisieren.
+## Einleitung
+Dieses Tool überwacht Systemmetriken und Netzwerkverbindungen für browserbasierte Spiele wie "Die Siedler Online". Es sammelt Daten zu CPU-Auslastung, Speichernutzung, Netzwerkaktivität und aktiven Netzwerkverbindungen und zeigt diese Metriken in einer grafischen Benutzeroberfläche (GUI) mithilfe von `tkinter` an. Zusätzlich kann das Tool die gesammelten Daten in einer CSV-Datei speichern und die Metriken mit `matplotlib` visualisieren.
 
-## Warum Dieses Tool?
-Online-Spielbetreiber behaupten oft, ihre Systeme seien sicher und harmlos für Ihr System. Viele forensische Experten und Sicherheitsexperten können jedoch das Gegenteil beweisen. Häufige Blue Screens oder Systemabstürze, die zu unsachgemäßen Abschaltungen führen, können folgende Schäden an Ihrem System verursachen:
+## Warum dieses Tool?
+Anbieter von Online-Spielen behaupten oft, dass ihre Systeme sicher und unschädlich für Ihr System sind. Viele Forensik-Experten und Sicherheitsadministratoren können jedoch das Gegenteil beweisen. Häufige Bluescreens oder Systemabstürze, die zu unsachgemäßen Shutdowns führen, können folgende Schäden anrichten:
 
-- **Datenverlust**: Festplattenkorruption
-- **Speicherschäden**: Permanente Beschädigung des RAM
+- **Datenverlust**: Beschädigung der Festplatte
+- **Speicherschäden**: Permanente Schäden am Arbeitsspeicher (RAM)
 - **Überhitzung**: Besonders bei modernen Geräten wie Netbooks und Laptops mit minimaler Kühlung und empfindlichen Bauteilen
 
-Es ist nicht immer klar, wohin Daten gesendet werden, insbesondere unter der Europäischen Datenschutz-Grundverordnung (DSGVO). Als Benutzer möchte ich wissen, wohin meine Daten gestreamt werden. Dieses Tool wurde entwickelt, um Ihnen zu helfen, etwaige Bedenken und potenzielle Schäden zu dokumentieren und Beweise für Verbraucherzentralen oder ähnliche Institutionen bereitzustellen, um der Gewinnsucht auf Kosten von Service und Sicherheit entgegenzuwirken.
+Es ist nicht immer klar, wohin Daten gesendet werden, insbesondere im Rahmen der Europäischen Datenschutzgrundverordnung (DSGVO). Als Nutzer möchte ich wissen, wohin meine Daten gestreamt werden. Dieses Tool wurde entwickelt, um Bedenken und potenzielle Schäden zu dokumentieren und Beweise für Verbraucherorganisationen oder ähnliche Stellen bereitzustellen, um den Fokus auf Sicherheit und Service zu lenken, anstatt nur auf Profit.
 
-### Benutzerrechte und DSGVO
-Unter der DSGVO haben Benutzer mehrere Rechte in Bezug auf ihre persönlichen Daten:
+## Benutzerrechte und DSGVO
+Nach der DSGVO haben Benutzer mehrere Rechte in Bezug auf ihre persönlichen Daten:
 - **Recht auf Information**: Sie müssen darüber informiert werden, wie Ihre Daten verwendet werden.
 - **Recht auf Zugang**: Sie können auf Ihre persönlichen Daten zugreifen und verstehen, wie sie verarbeitet werden.
-- **Recht auf Berichtigung**: Sie können Ihre Daten korrigieren lassen, wenn sie ungenau oder unvollständig sind.
-- **Recht auf Löschung**: Sie können die Löschung Ihrer Daten verlangen.
-- **Recht auf Einschränkung der Verarbeitung**: Sie können die Nutzung Ihrer Daten einschränken.
-- **Recht auf Datenübertragbarkeit**: Sie können Ihre Daten erhalten und für verschiedene Dienste wiederverwenden.
+- **Recht auf Berichtigung**: Sie können Ihre Daten korrigieren lassen, wenn diese ungenau oder unvollständig sind.
+- **Recht auf Löschung**: Sie können die Löschung Ihrer Daten beantragen.
+- **Recht auf Einschränkung der Verarbeitung**: Sie können einschränken, wie Ihre Daten verwendet werden.
+- **Recht auf Datenübertragbarkeit**: Sie können Ihre Daten exportieren und für andere Dienste verwenden.
 - **Widerspruchsrecht**: Sie können der Verarbeitung Ihrer Daten unter bestimmten Umständen widersprechen.
-- **Rechte in Bezug auf automatisierte Entscheidungen**: Sie können Entscheidungen anfechten und eine Überprüfung verlangen, die ohne menschliches Eingreifen getroffen wurden.
+- **Rechte in Bezug auf automatisierte Entscheidungsfindung**: Sie können automatisierte Entscheidungen anfechten und eine Überprüfung verlangen.
 
-Dieses Tool hilft Ihnen, diese Rechte auszuüben, indem es Transparenz über die gesammelten Daten und deren Nutzung bietet.
+Dieses Tool unterstützt Sie dabei, diese Rechte auszuüben, indem es Transparenz über die gesammelten Daten und deren Verwendung bietet.
 
 ## Funktionen
 - Überwacht CPU-Auslastung, Speichernutzung, gesendete/empfangene Netzwerkbytes und aktive Netzwerkverbindungen.
 - Zeigt Metriken in einer `tkinter`-GUI mit Echtzeit-Updates an.
-- Ermöglicht dem Benutzer, auszuwählen, welche Metriken angezeigt werden sollen, mittels Kontrollkästchen.
+- Ermöglicht es dem Benutzer, auszuwählen, welche Metriken in den Diagrammen angezeigt werden sollen.
 - Speichert gesammelte Daten in einer CSV-Datei.
 - Visualisiert Metriken in Diagrammen mit `matplotlib`.
 
-## Anforderungen
+## Neu in Version 2
+Die wichtigsten Änderungen und neuen Funktionen in Version 2 sind:
+
+1. **Detailliertes Logging-System**:
+   - Erstellt Logdateien mit Zeitstempel.
+   - Protokolliert alle wichtigen Ereignisse und Metriken.
+   - Separate Logs für jede Sitzung.
+
+2. **Verbesserte Netzwerküberwachung**:
+   - Erkennung und Protokollierung neuer Verbindungen.
+   - Speicherung der Verbindungshistorie.
+   - Optionale IP-Lokalisierung (erweiterbar).
+
+3. **Zeitstempel für alle Ereignisse**:
+   - Jede Metrik wird mit einem genauen Zeitstempel gespeichert.
+   - Verbesserte CSV-Dateien mit Zeitinformationen.
+   - Zeitstempel in der GUI-Anzeige.
+
+4. **Verbesserte Fehlerbehandlung**:
+   - Try-Catch-Blöcke für kritische Operationen.
+   - Protokollierung von Fehlermeldungen zur Fehleranalyse.
+
+Die grundlegenden Funktionen bleiben erhalten. Logs finden Sie im Ordner `logs`, und gespeicherte Metriken enthalten jetzt Zeitstempel.
+
+## Systemanforderungen
 - Python 3.x
 - `psutil`-Bibliothek für Systemmetriken
-- `selenium`-Bibliothek für Browserinteraktionen
+- `selenium`-Bibliothek für Browser-Interaktionen
 - `tkinter`-Bibliothek für die GUI
-- `csv`-Modul zum Speichern von Daten
-- `matplotlib`-Bibliothek zur Datenvisualisierung
-- ChromeDriver für `selenium` (stellen Sie sicher, dass es im PATH ist)
+- `csv`-Modul für das Speichern von Daten
+- `matplotlib`-Bibliothek für Diagramme
+- ChromeDriver für `selenium` (stellen Sie sicher, dass dieser im PATH ist)
 
 ## Installation
 1. Installieren Sie die erforderlichen Bibliotheken:
@@ -62,51 +87,46 @@ Dieses Tool hilft Ihnen, diese Rechte auszuüben, indem es Transparenz über die
     pip install psutil selenium matplotlib
     ```
 
-2. Laden Sie "ChromeDriver" herunter und installieren Sie es. Stellen Sie sicher, dass es in Ihrem PATH ist.
+2. Laden Sie "ChromeDriver" herunter, installieren Sie ihn und stellen Sie sicher, dass er im PATH ist.
 
 ## Verwendung
-1. Klonen Sie das Repository oder laden Sie das Skript herunter.
-2. Führen Sie das Skript aus:
+1. Klonen Sie das Repository oder laden Sie das Script herunter.
+2. Führen Sie das Script aus:
     ```bash
     python monitor.py
     ```
 
-3. Die GUI wird geöffnet und beginnt mit der Überwachung der angegebenen URL (https://www.diesiedleronline.de/). Sie können dieses Tool für jedes Browser-Spiel verwenden, bitte ändern Sie die URL nach Bedarf.
+3. Die GUI öffnet sich und startet die Überwachung der angegebenen URL (https://www.diesiedleronline.de/). Sie können dieses Tool für jedes Browsergame verwenden, indem Sie die URL entsprechend anpassen.
 
 4. Verwenden Sie die Kontrollkästchen, um auszuwählen, welche Metriken in den Diagrammen angezeigt werden sollen.
 
-5. Klicken Sie auf die Schaltfläche "Daten speichern", um die gesammelten Daten in einer CSV-Datei zu speichern.
+5. Klicken Sie auf die Schaltfläche „Daten speichern“, um die gesammelten Daten in einer CSV-Datei zu speichern.
 
-## Code-Erklärung
+## Codeerklärung
 Der Code besteht aus den folgenden Hauptteilen:
 
 1. **Importe und Funktionen**:
-    - Notwendige Bibliotheken importieren.
-    - Funktionen definieren, um Systemmetriken und Netzwerkverbindungen zu erhalten.
+    - Importieren der benötigten Bibliotheken.
+    - Definieren von Funktionen zur Erfassung von Systemmetriken und Netzwerkverbindungen.
 
 2. **Metriken aktualisieren**:
-    - Alle 5 Sekunden Metriken sammeln.
-    - Die GUI mit den neuesten Metriken aktualisieren.
-    - Gesammelte Daten in eine Liste aufnehmen, um sie später zu speichern oder zu referenzieren.
+    - Sammeln von Metriken alle 5 Sekunden.
+    - Aktualisieren der GUI mit den neuesten Metriken.
+    - Anhängen der gesammelten Daten an eine Liste für zukünftige Referenzen oder das Speichern.
 
 3. **Daten speichern**:
-    - Die gesammelten Daten in einer CSV-Datei speichern, wenn die Schaltfläche "Daten speichern" geklickt wird.
+    - Speichern der gesammelten Daten in einer CSV-Datei, wenn die Schaltfläche „Daten speichern“ angeklickt wird.
 
 4. **Daten plotten**:
-    - Die ausgewählten Metriken in der GUI mit `matplotlib` darstellen.
+    - Plotten der ausgewählten Metriken in der GUI mit `matplotlib`.
 
 5. **Hauptfunktion**:
-    - Die `tkinter`-GUI einrichten.
-    - Den Chrome-Browser mit `selenium` starten.
-    - Den Überwachungs- und Aktualisierungszyklus beginnen.
-
----
-
-Dieses Tool zielt darauf ab, Benutzer zu stärken, indem es Transparenz und Rechenschaftspflicht von Online-Spielbetreibern gewährleistet, insbesondere im Hinblick auf die DSGVO. Verwenden Sie dieses Tool, um Ihr System zu überwachen, die Auswirkungen von Online-Spielen zu verstehen und Ihre Rechte zu schützen.
-
+    - Einrichten der `tkinter`-GUI.
+    - Starten des Chrome-Browsers mit `selenium`.
+    - Beginn der Überwachungs- und Aktualisierungsschleife.
 
 ## Lizenz
-Dieses Projekt ist unter der GPLv3-Lizenz lizenziert - siehe die [LICENSE](LICENSE) Datei für Details.
+Dieses Projekt ist unter der GPLv3-Lizenz lizenziert – siehe die Datei [LICENSE](LICENSE) für Details.
 
-### Quelle
+## Quellen
 - [BrowserGames-Spy](https://github.com/VolkanSah/BrowserGamesSpy)
