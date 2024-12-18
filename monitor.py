@@ -89,9 +89,56 @@ def get_network_connections(network_monitor):
     network_monitor.previous_connections = current_connections
     return active_connections
 
+#  logs
+def collect_browser_console_logs(driver, network_monitor):
+    """
+    Sammelt und protokolliert Browser-Konsolenbefehle und Fehlermeldungen
+    
+    Args:
+        driver (WebDriver): Aktive Selenium WebDriver Instanz
+        network_monitor (NetworkMonitor): Netzwerk-Monitoring Objekt
+    """
+    try:
+        # Hole alle Browser-Konsolen-Logs
+        browser_logs = driver.get_log('browser')
+        
+        # Speichere Logs, wenn welche vorhanden sind
+        if browser_logs:
+            logging.info(f"Browser-Konsolen-Logs gefunden: {len(browser_logs)} Einträge")
+            
+            # Erstelle Verzeichnis für Konsolen-Logs, falls nicht vorhanden
+            console_log_dir = 'browser_console_logs'
+            os.makedirs(console_log_dir, exist_ok=True)
+            
+            # Generiere Dateinamen mit Timestamp
+            current_time = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
+            log_filename = os.path.join(console_log_dir, f'browser_console_{current_time}.log')
+            
+            # Schreibe Logs in eine Datei
+            with open(log_filename, 'w', encoding='utf-8') as log_file:
+                for log_entry in browser_logs:
+                    log_entry_str = (
+                        f"Zeitstempel: {log_entry['timestamp']} | "
+                        f"Level: {log_entry['level']} | "
+                        f"Nachricht: {log_entry['message']}\n"
+                    )
+                    log_file.write(log_entry_str)
+                    
+                    # Optionale Konsolenausgabe für sofortige Sichtbarkeit
+                    logging.warning(log_entry_str)
+            
+            logging.info(f"Browser-Konsolen-Logs wurden in {log_filename} gespeichert")
+    
+    except Exception as e:
+        logging.error(f"Fehler beim Sammeln von Browser-Konsolen-Logs: {str(e)}")
+
+
+
 def update_metrics(network_monitor):
     current_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     logging.info(f"Update der Metriken gestartet: {current_time}")
+    
+    collect_browser_console_logs(driver, network_monitor)
     
     cpu_usage, memory_usage, sent_bytes, recv_bytes = get_system_metrics()
     active_connections = get_network_connections(network_monitor)
