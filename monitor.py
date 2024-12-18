@@ -89,7 +89,6 @@ def get_network_connections(network_monitor):
     network_monitor.previous_connections = current_connections
     return active_connections
 
-#  logs
 def collect_browser_console_logs(driver, network_monitor):
     """
     Sammelt und protokolliert Browser-Konsolenbefehle und Fehlermeldungen
@@ -101,6 +100,13 @@ def collect_browser_console_logs(driver, network_monitor):
     try:
         # Hole alle Browser-Konsolen-Logs
         browser_logs = driver.get_log('browser')
+        
+        # Logs basierend auf Benutzer-Auswahl filtern
+        if not log_all_console.get():
+            browser_logs = [
+                log for log in browser_logs 
+                if log['level'] in ['SEVERE', 'ERROR']
+            ]
         
         # Speichere Logs, wenn welche vorhanden sind
         if browser_logs:
