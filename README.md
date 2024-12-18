@@ -1,5 +1,5 @@
 
-# BrowserGamesSpy v2
+# BrowserGamesSpy v3 DEV!
 ###### System and Network Monitoring Tool | [> Auf Deutsch lesen](LIES-MICH.md)
 
 ![GameSpy](gamespy.png)
