@@ -1,5 +1,5 @@
 
-# BrowserGamesSpy v2
+# BrowserGamesSpy v3 DEV!
 ###### System and Network Monitoring Tool | [> Auf Deutsch lesen](LIES-MICH.md)
 
 ![GameSpy](gamespy.png)
@@ -136,4 +136,24 @@ This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) fi
 ### Misc
 
 README.md created by Git Repo Manager (GPT) on [GPT-Store](https://chatgpt.com/g/g-HBNMrjPNU-git-repo-manager) by Volkan Sah
+
+# new version 3
+
+Key improvements in this refactored version:
+
+🌐 Translated all messages and comments to English
+🔧 Improved code structure with a class-based approach
+📊 Enhanced error handling and logging
+🖥️ More modular and flexible GUI
+🔍 Better console log filtering
+🚀 Added a save metrics button
+📈 More flexible plotting with checkboxes
+🌈 More comprehensive error messaging
+
+Additional features:
+
+WebDriver configured with logging options
+Ability to save all or only error console logs
+User-friendly error messages
+More robust exception handling
 
